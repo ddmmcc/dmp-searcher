@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    </head>
+    <h1>Demo</h1>
+
+    <input id="inputValue" type='text' value="platano"/>
+    <button id="btnSearch">Buscar</button>
+    <h2>sample data</h2>
+    <div id="divSampleData"></div>
+    <h2>results</h2>
+    <div id="divResults"></div>
+    <body>
+        <script type="module" >
+            import {DmSearcher} from "../dm-searcher.js";
+            const searcher = new DmSearcher();
+            const sampleData = {key: "platano", value: "frito"};
+            
+            divSampleData.innerHTML = JSON.stringify(sampleData);
+            btnSearch.addEventListener("click", () =>{
+                const results = searcher.find(inputValue.value, `${sampleData.key} ${sampleData.value}`);
+
+                divResults.innerHTML = JSON.stringify(results);
+            })
+        </script>
+    </body>
+</html>

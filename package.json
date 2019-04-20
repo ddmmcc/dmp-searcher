@@ -1,0 +1,27 @@
+{
+  "name": "dmp-searcher",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dm-searcher.js",
+  "dependencies": {
+    
+  },
+  "devDependencies": {
+    "http-serve": "^1.0.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "http-serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ddmmcc/dmp-searcher.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ddmmcc/dmp-searcher/issues"
+  },
+  "homepage": "https://github.com/ddmmcc/dmp-searcher#readme"
+}
